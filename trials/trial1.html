@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css" />
+        <title>
+            Nasłuchiwanie zdarzeń na elementach tworzonych dynamicznie w
+            JavaScript – próba 1
+        </title>
+    </head>
+    <body>
+        <main class="articleExamples">
+            <h1 class="articleExamples__header">Próba 1</h1>
+            <section class="articleExamples__adminPanel adminPanel">
+                <button class="adminPanel__addProductBtn">Dodaj produkt</button>
+                <ul class="adminPanel__list">
+                    <li class="adminPanel__item adminPanel__item--template">
+                        <article class="adminPanel__container product">
+                            <h2 class="product__name"></h2>
+                            <button class="product__deleteBtn">usuń</button>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <aside class="articleExamples__trials trials">
+                <a href="./trial1.html" class="active trials__trial trials__trial--1">Próba 1</a
+                ><a href="./trial2.html" class="trials__trial trials__trial--2">Próba 2</a
+                ><a href="./trial3.html" class="trials__trial trials__trial--3">Próba 3</a>
+            </aside>
+            <a href="../index.html" class="articleExamples__backBtn">Powrót</a>
+        </main>
+        <script src="./app1.js"></script>
+    </body>
+</html>
