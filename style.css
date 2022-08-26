@@ -10,10 +10,11 @@ li {
 
 a {
     text-decoration: none;
-    color: black
+    color: black;
 }
 
-.adminPanel, .articleExamples__trials {
+.adminPanel,
+.articleExamples__trials {
     border: 1px solid black;
     margin: 0 auto;
     padding: 30px;
@@ -58,7 +59,8 @@ a {
     margin-bottom: 10px;
 }
 
-.adminPanel__addProductBtn, .trials__trial, .articleExamples__backBtn {
+.adminPanel__addProductBtn,
+.articleExamples__backBtn {
     border: none;
     border-radius: 5px;
     display: block;
@@ -76,16 +78,19 @@ a {
 .articleExamples__trials {
     margin-top: 50px;
 }
-.trials {
-    display: flex;
-    justify-content: space-around;
-}
 
-.trials__trial {
-    background-color: rgb(255, 185, 197);
+.trials__link {
+    background-color: rgb(255, 214, 221);
     border: 3px solid transparent;
+    border-radius: 5px;
+    display: block;
+    padding: 5px 10px;
 }
 
-.trials__trial.active {
-    border: 3px solid rgb(240, 139, 155);
+.trials__trial:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.trials__trial.active .trials__link {
+    border: 3px solid rgb(255, 171, 185);
 }
