@@ -12,7 +12,9 @@
     </head>
     <body>
         <main class="articleExamples">
-            <h1 class="articleExamples__header">Rozwiązanie przed dodaniem nasłuchiwania na przycisku „Usuń”</h1>
+            <h1 class="articleExamples__header">
+                Rozwiązanie przed dodaniem nasłuchiwania na przycisku „Usuń”
+            </h1>
             <section class="articleExamples__adminPanel adminPanel">
                 <button class="adminPanel__addProductBtn">Dodaj produkt</button>
                 <ul class="adminPanel__list">
@@ -24,11 +26,26 @@
                     </li>
                 </ul>
             </section>
-            <aside class="articleExamples__trials trials">
-                <a href="./trials/trial1.html" class="trials__trial trials__trial--1">Próba 1</a
-                ><a href="./trials/trial2.html" class="trials__trial trials__trial--2">Próba 2</a
-                ><a href="./trials/trial3.html" class="trials__trial trials__trial--3">Próba 3</a>
-            </aside>
+            <ul class="articleExamples__trials trials">
+                <li class="trials__trial trials__trial--1">
+                    <a href="./trials/trial1.html" class="trials__link"
+                        >Próba 1: querySelectorAll() – wyszukanie wszystkich
+                        przycisków „usuń”</a
+                    >
+                </li>
+                <li class="trials__trial trials__trial--2">
+                    <a href="./trials/trial2.html" class="trials__link"
+                        >Próba 2: dodanie nasłuchiwania w momencie dynamicznego
+                        tworzenia elementu</a
+                    >
+                </li>
+                <li class="trials__trial trials__trial--3">
+                    <a href="./trials/trial3.html" class="trials__link"
+                        >Próba 3: nasłuchiwanie na elementach tworzonych
+                        dynamicznie – wykorzystanie propagacji</a
+                    >
+                </li>
+            </ul>
         </main>
         <script src="app.js"></script>
     </body>
